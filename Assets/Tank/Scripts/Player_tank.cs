@@ -30,7 +30,8 @@ public class player_tank : MonoBehaviour, I_damageable
 
         if (Input.GetButtonDown("Fire1") && ammo > 0)
         {
-            Instantiate(rocket, barrel.position, barrel.rotation);
+            Instantiate(rocket, barrel.position + Vector3.up, barrel.rotation);
+            ammo--;
         }
 
         ammoText.text = "Ammo: " + ammo.ToString();
@@ -40,7 +41,7 @@ public class player_tank : MonoBehaviour, I_damageable
     private void FixedUpdate()
     {
         rb.AddRelativeForce(Vector3.forward * force);
-        rb.AddRelativeTorque(Vector3.up * torque);
+        rb.AddRelativeTorque(Vector2.up * torque);
     }
 
     public void ApplyDamage(float damage)
