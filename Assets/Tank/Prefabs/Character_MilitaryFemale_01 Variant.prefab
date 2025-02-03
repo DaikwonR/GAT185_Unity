@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character_MilitaryFemale_01 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1485438405061212, guid: 5d65c3bd98b79f84e996821ebfc0a190, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 4617884522746348, guid: 5d65c3bd98b79f84e996821ebfc0a190, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -59,6 +63,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1485438405061212, guid: 5d65c3bd98b79f84e996821ebfc0a190, type: 3}
       insertIndex: 1
       addedObject: {fileID: -7442088019868221110}
+    - targetCorrespondingSourceObject: {fileID: 1485438405061212, guid: 5d65c3bd98b79f84e996821ebfc0a190, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: -1937766636685885311}
+    - targetCorrespondingSourceObject: {fileID: 1485438405061212, guid: 5d65c3bd98b79f84e996821ebfc0a190, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8260227886719730928}
   m_SourcePrefab: {fileID: 100100000, guid: 5d65c3bd98b79f84e996821ebfc0a190, type: 3}
 --- !u!1 &3574166623875094827 stripped
 GameObject:
@@ -77,5 +87,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc0ec5a5d332dbe4c81db40b517a68eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 28.6
+  health: 25
   destroyFX: {fileID: 1575721338728490, guid: 4171bb92c5c591848b14be1db6f3efe2, type: 3}
+--- !u!114 &-1937766636685885311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3574166623875094827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b05343766e1355044a9fc09e76c4e5a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 15
+--- !u!64 &8260227886719730928
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3574166623875094827}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300008, guid: 0045ffb477e043a46950af7e617beb06, type: 3}

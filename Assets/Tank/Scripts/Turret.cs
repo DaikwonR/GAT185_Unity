@@ -19,13 +19,13 @@ public class Turret : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //spawnTimer -= Time.deltaTime;
-        //if (Time.time >= spawnTimer)
-        //{
-        //    spawnTimer = Time.time + spawnTime;
-        //    Instantiate(rocketPrefab, barrel.position, barrel.rotation);    
+        spawnTimer -= Time.deltaTime;
+        if (Time.time >= spawnTimer)
+        {
+            spawnTimer = Time.time + spawnTime;
+            Instantiate(rocketPrefab, barrel.position, barrel.rotation);    
 
-        //}
+        }
     }
 
     IEnumerator SpawnFire()

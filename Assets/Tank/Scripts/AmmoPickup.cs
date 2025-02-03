@@ -11,7 +11,7 @@ public class AmmoPickup : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (other.TryGetComponent(out player_tank component))
+            if (other.TryGetComponent(out Player_tank component))
             {
                 component.ammo += ammoCount;
                 Destroy(gameObject);

@@ -13,6 +13,18 @@ PrefabInstance:
       value: AmmoPickup Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4068987886524942, guid: 4ed3355cdb3d9424f8f80b2a79da3543, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068987886524942, guid: 4ed3355cdb3d9424f8f80b2a79da3543, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068987886524942, guid: 4ed3355cdb3d9424f8f80b2a79da3543, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068987886524942, guid: 4ed3355cdb3d9424f8f80b2a79da3543, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -52,9 +64,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4068987886524942, guid: 4ed3355cdb3d9424f8f80b2a79da3543, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 64201938623352536, guid: 4ed3355cdb3d9424f8f80b2a79da3543, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64201938623352536, guid: 4ed3355cdb3d9424f8f80b2a79da3543, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

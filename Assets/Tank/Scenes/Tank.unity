@@ -2573,8 +2573,12 @@ PrefabInstance:
       value: AmmoPickup
       objectReference: {fileID: 0}
     - target: {fileID: 1570332180182738119, guid: 712a59eb8ec0d3e4da72f4cd603a3b75, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1570332180182738119, guid: 712a59eb8ec0d3e4da72f4cd603a3b75, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

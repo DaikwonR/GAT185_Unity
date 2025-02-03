@@ -1,3 +1,4 @@
+using UnityEditor.Build.Content;
 using UnityEngine;
 
 public class Destructable : MonoBehaviour, I_damageable
@@ -7,6 +8,8 @@ public class Destructable : MonoBehaviour, I_damageable
 
     bool destroyed = false;
 
+    public float Health { get { return health; } set { health = (value < 0) ? 0 : value; } }
+
     public void ApplyDamage(float damage)
     {
         if (destroyed) return;
@@ -14,6 +17,8 @@ public class Destructable : MonoBehaviour, I_damageable
         health -= damage;
         if (health <= 0)
         {
+            //GameManagerDependencyInfo.Instance.AddPoint(50);
+
             destroyed = true;
             if (destroyFX != null) Instantiate(destroyFX, transform.position, Quaternion.identity);
             Destroy(gameObject);
