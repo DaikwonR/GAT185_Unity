@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a8436149f9d60e4da019f10a94f60c3, type: 3}
   m_Name: Player_data
   m_EditorClassIdentifier: 
-  speed: 3
-  jumpHeight: 7.6
-  gravity: -3.4
-  turnRate: 3.77
+  walk: 3
+  sprint: 7.7
+  acceleration: 10.6
+  jumpHeight: 2.29
+  gravity: -21.9
+  turnRate: 20
